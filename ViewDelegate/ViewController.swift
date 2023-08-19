@@ -38,7 +38,7 @@ protocol NotificationSettingViewDelegate{
 
     class NotificationSettingView: UIView{
         
-        var delegate: NotificationSettingViewDelegate?
+       var delegate: NotificationSettingViewDelegate?
         
         private let imageView :UIImageView = {
             
