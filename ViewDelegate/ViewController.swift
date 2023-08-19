@@ -32,13 +32,13 @@ class ViewController: UIViewController,NotificationSettingViewDelegate {
     
 }
 
-protocol NotificationSettingViewDelegate{
+protocol NotificationSettingViewDelegate: AnyObject{
     func didTabEnableButton()
 }
 
     class NotificationSettingView: UIView{
         
-       var delegate: NotificationSettingViewDelegate?
+     weak var delegate: NotificationSettingViewDelegate?
         
         private let imageView :UIImageView = {
             
